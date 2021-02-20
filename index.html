@@ -3,21 +3,63 @@
         <script src="./questions.js"></script>
     </head>
     <body>
-        <div>
-            <h1>Test</h1>
-            <div>
-                <div>
-                    <ul>
-                        <li>Question 1:</li>
-                    </ul>
+        <div class="container">
+            <div class="header">
+                <h1>My Quiz</h1>
+            </div>
+
+            <div class="body">
+                <div class="question-step"></div>
+                <div class="question-text"></div>
+                <div class="question-image">
+                    <img width="250px" src="" />
                 </div>
-                <button>
-                    < Previous
-                </button>
-                <button>
-                    Next >
-                </button>
+                <form class="answers-holder"></form>
+                <div class="navigation">
+                    <button type="button" onclick="previousStep()" class="previous-button button-disabled">Previous</button>
+                    <button type="button" onclick="nextStep()" class="next-button button-disabled">Next</button>
+                    <button type="button" onclick="getScore()" class="score-button button-disabled">Finish</button>
+                </div>
             </div>
         </div>
     </body>
+    <style>
+        .container {
+            background-color: aqua;
+        }
+
+        .header {
+            min-height: 100px;
+            background-color: turquoise;
+        }
+
+        .body {
+
+        }
+
+        .question-text {
+
+        }
+
+        .question-image {
+
+        }
+
+        .question-answers {
+
+        }
+
+        .answers-holder {
+
+        }
+
+        .navigation {
+
+        }
+
+        .button-disabled {
+            display: none;
+        }
+
+    </style>
 </html>
